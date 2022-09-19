@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+:root {
+    font-size: 62.5%;
+    text-align: center;
+}
+
+.banner img{
+    width: 60rem;
+    height: 20rem;
+    margin: 2rem 2rem 2rem;
+}
+
+main{
+    display: grid;
+    gap: 3.2rem; 
+    grid-template-areas:
+        "A B C D"
+        "E F G H"
+        "I J K L";
+}
+
+main .planos:nth-child(1){ grid-area: A; } 
+main .planos:nth-child(2){ grid-area: B; }
+main .planos:nth-child(3){ grid-area: C; }
+main .planos:nth-child(4){ grid-area: D; }
+main .produtos:nth-child(5){ grid-area: E; }
+main .produtos:nth-child(6){ grid-area: F; }
+main .produtos:nth-child(7){ grid-area: G; }
+main .produtos:nth-child(8){ grid-area: H; }
+main .produtos:nth-child(9){ grid-area: I; }
+main .produtos:nth-child(10){ grid-area: J; }
+main .produtos:nth-child(11){ grid-area: K; }
+main .produtos:nth-child(12){ grid-area: L; }
+main img:hover{ transform: scale(1.1); }
+
+
+button{
+    background: #046342;
+    color: white;
+    height: 30px;
+    width: 230px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    align-items: center;
+    opacity: 0.5;
+    align-content: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 10px;    
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color:rgb(168, 202, 144);
+}
+
+p{
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+.page {
+    font-family: 'Palanquin', sans-serif;
+    font-family: 'Staatliches', cursive;
+    display: block;
+    margin: 0px;
+
+}
+
+.preco{
+    color: red;
+    font-size: 3rem;
+    text-orientation: sideways;
+}
+.preco:hover{ transform: scale(1.1); }
+
+.avaliacao img{
+    width: 10rem;
+    height: 2rem;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 1rem;
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+    padding-bottom: 1rem;
+    background: rgb(168, 202, 144);
+    border-radius: 5px;
+}
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.input-wrapper input,
+.input-wrapper select{
+    height: 4rem;
+    border-radius: 0.5rem;
+}
+.input-wrapper textarea{
+    border-radius: 0.5rem;
+}
+
+.input-wrapper label,
+.input-radio label,
+.input-check label, legend{
+    font-size: 2rem;
+}
+
+body{
+    width: 95rem;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#button{
+    height: 4rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;           
+}

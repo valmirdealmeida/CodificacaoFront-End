@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page {
+            width: 50rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div class="banner">
+                <img src="./imagens/logocerveja.png" alt="aqui vai um banner">
+            </div>
+            <tools>
+                <form action="">
+                    <div class="input-wrapper">
+                        <label for="input-pesquisar">Pesquisar</label>
+                        <input type="search" id="input-pesquisar">
+                    </div>
+                    <a href="./cadastro.html">Cadastro</a>
+                    <a href="./login.html">Login</a>
+                    <a href="./cadastro.html">Carrinho</a>
+                </form>
+            </tools>
+        </header>
+
+        <form action="./Envio/get.html">
+            <h1>Cadastro</h1>
+            <div class="input-wrapper">
+                <label for="input-name">Nome:</label>
+                <input type="text" id="input-name">
+            </div>
+            <div class="input-wrapper">
+                <label for="input-endereco">Endereço:</label>
+                <input type="text" id="input-endereco">
+            </div>
+            <div class="input-wrapper">
+                <label for="input-num">Numero:</label>
+                <input type="number" id="input-num">
+            </div>
+            <div class="input-wrapper">
+                <label for="input-cidade">Cidade:</label>
+                <input type="text" id="input-cidade">
+            </div>            
+            <div class="input-wrapper">
+                <label for="input-course">Estado:</label>
+                <select id="input-course">
+                    <option value="course1">Rio Grande do Sul</option>
+                    <option value="course2">Santa Catarina</option>
+                    <option value="course3">Paraná</option>
+                    <option value="course4">São Paulo</option>
+                    <option value="course5">Outros...</option>
+                </select>
+            </div>
+            <div class="input-wrapper">
+                <label for="input-date">Data de Nascimento: (DD/MM/AAAA)</label>
+                <input type="date" id="input-date">
+            </div>
+            <input id="button" type="submit" value="Salvar">
+        </form>
+    </div>
+</body>
+
+</html>
